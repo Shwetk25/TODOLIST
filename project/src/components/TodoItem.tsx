@@ -81,7 +81,6 @@ const TodoItem: React.FC<TodoItemProps> = ({
                 type="text"
                 value={editText}
                 onChange={(e) => setEditText(e.target.value)}
-                onBlur={handleEdit}
                 onKeyDown={(e) => e.key === 'Enter' && handleEdit()}
                 autoFocus
                 className="w-full p-1 border border-gray-300 rounded mb-2"
